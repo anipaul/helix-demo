@@ -1,0 +1,54 @@
+main .section.hero-home-container {
+  padding: 0;
+  box-sizing: border-box;
+}
+main .hero-home {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+main .hero-home img {
+  width: 100vw;
+  object-fit: cover;
+  height: 180px;
+}
+main .hero-home > div > div > p:first-child {
+  margin: 0px;
+}
+main .hero-home > div > div > p:last-child {
+  display: none;
+  position: absolute;
+}
+main .hero-home > div > div > h1 {
+  margin: 0;
+  padding: 24px 18px 40px 18px;
+  height: auto;
+  box-sizing: border-box;
+  line-height: 40px;
+  animation: moveUp 1s ease-in-out;
+}
+@media (min-width: 900px) {
+  main .hero-home > div > div > h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 64px 0 0 22px;
+  }
+}
+@media (min-width: 1025px) {
+  main .hero-home img {
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+  }
+  main .hero-home > div > div > h1 {
+    padding: 98px 0 0 105px;
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
